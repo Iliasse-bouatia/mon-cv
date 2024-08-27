@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 export default function YourComponent() {
   useEffect(() => {
@@ -12,6 +12,7 @@ export default function YourComponent() {
 
     menuToggle.addEventListener('click', handleToggle);
 
+    // Cleanup function to remove the event listener when the component unmounts
     return () => {
       menuToggle.removeEventListener('click', handleToggle);
     };
@@ -19,19 +20,17 @@ export default function YourComponent() {
 
   return (
     <div>
-      {/* Your JSX structure here */}
       <button className="menu-toggle">Menu</button>
       <nav className="nav-links">
-        {/* Nav links here */}
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </div>
   );
 }
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    menuToggle.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-    });
-});
