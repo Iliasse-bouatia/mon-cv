@@ -1,6 +1,5 @@
 body {
     font-family: 'Lato', sans-serif;
-    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -111,7 +110,6 @@ section.heading h2 {
 #skills, h2 {
     text-align: center;
 }
-
 #projects {
     background-color: #ECF0F1; /* Blanc cassé */
 }
@@ -189,16 +187,16 @@ ul {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     background: #fff;
     margin-bottom: 20px; /* Espacement entre les éléments de la timeline */
+    margin-left: 0; /* Enlève les marges à gauche */
+    margin-right: 0; /* Enlève les marges à droite */
     margin-left: 60px; /* Éloigne du trait noir central */
     margin-right: 60px; /* Éloigne du trait noir central */
 }
-
 #education .heading h2 {
-    margin: 15px 0;
+    margin: 15px 0px;
     margin-bottom: 40px; /* Ajouter de l'espace sous le titre */
 }
-
-.education-block {
+.education-block{
     width: 90%;
     margin: 0 auto;
     text-align: center;
@@ -208,32 +206,182 @@ ul {
     border: 1px solid #ccc;
     margin-bottom: 20px;
 }
-
-.education-block h5 {
+.education-block h5{
     color: #888;
     font-size: 15px;
     margin-bottom: 15px;
 }
-
-.education-block span {
+.education-block span{
     font-size: 35px;
 }
-
-.education-block h3 {
-    margin: 15px 0;
+.education-block h3{
+    margin: 15px 0px;
 }
-
-.education-block h4 {
-    margin-bottom: 20px;
+.education-block h4{
+    margin-bottom:20px ;
     font-weight: normal;
 }
-
 /* Style pour la section des informations de contact */
-#contact {
-    padding: 50px 0;
-    background-color: #d4d4d4;
+/* Section Contact */
+/* Section Contact */
+/* Contact Section Styling */
+
+
+#certificates {
+    padding: 60px 0;
+    background-color: #f9f9f9;
 }
 
+#certificates .heading h2 {
+    font-size: 2rem;
+    color: #2C3E50;
+    margin-bottom: 40px;
+}
+
+#certificates .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#certificates .certificate {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+    min-height: 200px;
+}
+
+#certificates .certificate h3 {
+    margin-top: 0;
+    color: #2C3E50;
+}
+
+#certificates .certificate p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 1rem;
+}
+
+#certificates .certificate ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+    text-align: left;
+}
+
+#certificates .certificate ul li {
+    margin: 5px 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #2C3E50;
+    color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #27AE60; /* Changer la couleur au survol */
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    background-color: #ffffff;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #2C3E50;
+        flex-direction: column;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
 .contact-info {
     list-style: none;
     padding: 0;
@@ -245,6 +393,15 @@ ul {
 
 .contact-info span {
     margin-right: 10px;
+}
+/* Style général pour la section de contact */
+#contact {
+    padding: 50px 0;
+    background-color: #d4d4d4;
+}
+
+.container {
+    max-width: 1200px; /* Ajuste la largeur maximale du conteneur */
 }
 
 /* Style des cartes de contact */
@@ -301,33 +458,17 @@ ul {
     text-decoration: underline;
 }
 
+
+.heading h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center; /* Centre le titre de la section */
+}
+
 /* Mise en page responsive */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 0; /* Ajuste la position du menu */
-        background-color: #2C3E50;
-        flex-direction: column;
-        width: 100%;
-        border-radius: 0;
-        text-align: center;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 15px 0;
-        width: 100%;
-    }
-
-    .menu-toggle {
-        display: flex;
-        position: absolute;
-        right: 20px;
-        top: 15px;
+@media (max-width: 767px) {
+    .contact-card {
+        min-width: 100%; /* Assure que les cartes utilisent toute la largeur disponible sur les petits écrans */
     }
 }
