@@ -110,6 +110,7 @@ section.heading h2 {
 #skills, h2 {
     text-align: center;
 }
+
 #projects {
     background-color: #ECF0F1; /* Blanc cassé */
 }
@@ -192,11 +193,13 @@ ul {
     margin-left: 60px; /* Éloigne du trait noir central */
     margin-right: 60px; /* Éloigne du trait noir central */
 }
+
 #education .heading h2 {
     margin: 15px 0px;
     margin-bottom: 40px; /* Ajouter de l'espace sous le titre */
 }
-.education-block{
+
+.education-block {
     width: 90%;
     margin: 0 auto;
     text-align: center;
@@ -206,26 +209,25 @@ ul {
     border: 1px solid #ccc;
     margin-bottom: 20px;
 }
-.education-block h5{
+
+.education-block h5 {
     color: #888;
     font-size: 15px;
     margin-bottom: 15px;
 }
-.education-block span{
+
+.education-block span {
     font-size: 35px;
 }
-.education-block h3{
+
+.education-block h3 {
     margin: 15px 0px;
 }
-.education-block h4{
-    margin-bottom:20px ;
+
+.education-block h4 {
+    margin-bottom: 20px;
     font-weight: normal;
 }
-/* Style pour la section des informations de contact */
-/* Section Contact */
-/* Section Contact */
-/* Contact Section Styling */
-
 
 #certificates {
     padding: 60px 0;
@@ -328,147 +330,64 @@ body {
 }
 
 .nav-links a:hover {
-    color: #27AE60; /* Changer la couleur au survol */
+    color: #27AE60; /* Vert menthe */
 }
 
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-toggle .bar {
-    background-color: #ffffff;
-    height: 3px;
-    width: 25px;
-    margin: 3px 0;
-    transition: 0.3s;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: #2C3E50;
-        flex-direction: column;
-        width: 200px;
-        border-radius: 5px;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 15px 0;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-}
-
-.menu-toggle.active .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.menu-toggle.active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle.active .bar:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-.contact-info {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-info li {
-    margin-bottom: 10px;
-}
-
-.contact-info span {
-    margin-right: 10px;
-}
-/* Style général pour la section de contact */
 #contact {
-    padding: 50px 0;
-    background-color: #d4d4d4;
+    background-color: #f9f9f9;
+    padding: 60px 20px;
 }
 
-.container {
-    max-width: 1200px; /* Ajuste la largeur maximale du conteneur */
+#contact .container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* Style des cartes de contact */
-.contact-card {
-    background: #fff;
-    border: 2px solid #000000;
-    border-radius: 12px;
-    padding: 20px;
+#contact h2 {
     text-align: center;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+}
+
+.form-group {
     margin-bottom: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 300px; /* Largeur minimale pour les cartes */
-    max-width: 100%; /* Évite que les cartes débordent du conteneur */
 }
 
-.contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.contact-icon {
-    font-size: 3rem;
-    color: #000000;
-    margin-bottom: 15px;
-}
-
-.contact-card h4 {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.contact-card p {
-    font-size: 1rem;
-    color: #666;
-    word-break: break-word; /* Assure que le texte se casse si nécessaire */
-    margin: 0; /* Enlève les marges pour que le texte soit mieux centré */
-    max-width: 100%; /* Évite le débordement du texte */
-}
-
-.contact-card a {
-    color: #000306;
-    text-decoration: none;
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
-.contact-card a:hover {
-    text-decoration: underline;
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
-
-.heading h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 30px;
-    text-align: center; /* Centre le titre de la section */
+.form-group textarea {
+    resize: vertical;
+    height: 150px;
 }
 
-/* Mise en page responsive */
-@media (max-width: 767px) {
-    .contact-card {
-        min-width: 100%; /* Assure que les cartes utilisent toute la largeur disponible sur les petits écrans */
-    }
+.btn-primary {
+    background-color: #2C3E50; /* Bleu foncé */
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #27AE60; /* Vert menthe */
+}
+
+footer {
+    background-color: #2C3E50;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
 }
