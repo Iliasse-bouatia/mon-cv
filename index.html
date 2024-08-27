@@ -14,238 +14,241 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <nav class="navbar">
         <div class="container">
-            <a href="#" class="navbar-brand">Iliasse Bouatia</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                    <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
+            <a href="#" class="logo">Iliasse Bouatia</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </nav>
 
-    <section id="about" class="container-fluid text-center py-5">
-        <div class="row justify-content-center">
-            <div class="col-8 col-lg-4 mb-4">
-                <img src="me.jpg" class="rounded-circle img-fluid" alt="Iliasse Bouatia">
+   
+    <section id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-8 col-lg-4 profile-picture">
+                <img src="me.jpg" class="rounded-circle" alt="Iliasse Bouatia">
             </div>
-            <div class="col-12">
+            <div class="col-12 text-center heading">
                 <h1>Hello, I'm Iliasse</h1>
                 <h3>Engineering Student</h3>
-                <a href="cv.pdf" download class="btn btn-primary mt-3">Download CV</a>
+                <a href="cv.pdf" download  class="button1">Download CV</a>
             </div>
         </div>
     </section>
-
-    <section id="skills" class="py-5">
+    <section id="skills">
         <div class="divider"></div>
+        <div class="heading">
+            <h2>Skills</h2>
+        </div>
         <div class="container">
-            <div class="heading text-center mb-5">
-                <h2>Skills</h2>
+            <div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 90%;">
+                    <span>C 90 %</span>
+                </div>
             </div>
+            <div class="progress" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 60%;">
+                    <span>Python 60%</span>
+                </div>
+            </div>
+            <div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 80%;">
+                    <span>HTML/CSS 80%</span>
+                </div>
+            </div>
+            <div class="progress" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 55%;">
+                    <span>JavaScript 55%</span>
+                </div>
+            </div>
+            <div class="progress" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 60%;">
+                    <span>data base 60%</span>
+                </div>
+            </div>
+            <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 75%;">
+                    <span>Algorithme 75%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="divider"></div>
+        <div class="heading">
+            <h2>Projects</h2>
+        </div>
+        <ul class="timeline">
+            <li>
+                <div class="timeline-badge"> <span class="bi-briefcase-fill"></span></div>
+                <div class="timeline-panel-container"> 
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Bluetooth Robots</h4>
+                            <p class="text-muted"><span class="bi-clock-fill"></span> 2024</p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>The robot is controlled via Bluetooth using a mobile app, with commands sent to the Arduino Uno.</p> 
+                            <p>The Arduino adjusts the motors based on these signals, enabling movement.</p>
+                            <p>The robot can navigate obstacles, follow paths, and perform other tasks.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-badge"> <span class="bi-briefcase-fill"></span></div>
+                <div class="timeline-panel-container timeline-panel-container-inverted"> 
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Front-end of Travel Agency</h4>
+                            <p class="text-muted"><span class="bi-clock-fill"></span> 2024</p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Website of a travel agency using HTML and CSS.</p> 
+                            <p>The page contains About Us, Destinations, Itineraries, and Contact Us.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-badge"> <span class="bi-briefcase-fill"></span></div>
+                <div class="timeline-panel-container"> 
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Snake Game</h4>
+                            <p class="text-muted"><span class="bi-clock-fill"></span> 2024</p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>The game is created using JavaScript.</p> 
+                            <p>When the snake eats the apple, it grows.</p>
+                            <p>When the snake eats itself or hits the wall, it's game over.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section id="education">
+        <div class="divider"></div>
+        <div class="heading">
+            <h2>Education</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="education-block">
+                    <h5>2021-2022</h5>
+                    <span class="bi-award-fill"></span>
+                    <h3> groupe scolaire albayan </h3>
+                    <h4>  bac français </h4>
+                    <div class="divider"></div>
+                    <p>  science phisyque </p>
+                    <p> mention trés bien</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="education-block">
+                    <h5>2022-présent</h5>
+                    <span class="bi-award-fill"></span>
+                    <h3> Ecole Marocaine des Sciences de L'ingénieur </h3>
+                    <h4> 1ére annes cycle d'ingénieur   </h4>
+                    <div class="divider"></div>
+                    <p> ingénieurie d'informatique et réseaux</p>
+                    <p> auto Formation </p>
+                </div> 
+        </div>
+        </div>
+    </section>
+    <section id="certificates">
+        <div class="divider"></div>
+        <div class="heading">
+            <h2>Certificats</h2>
+        </div>
+        <div class="container">
+            <div class="certificate">
+                <h3>Python for Data Science, IA & Développement</h3>
+                <p><strong>Institution :</strong> IBM / Coursera</p>
+                <p><strong>Description :</strong> Certificat couvrant les fondamentaux de Python, l'analyse de données, l'intelligence artificielle et le développement, ycompris:</p>
+                <ul>
+                    <li>python basics</li>
+                    <li>python data structures</li>
+                    <li>python programming fondamentaux</li>
+                    <li>working with data in python</li>
+                    <li>Api's and data collection</li>
+            
+                </ul>
+            </div>
+            <div class="certificate">
+                <h3>Formation Complète Développeur Web</h3>
+                <p><strong>Institution :</strong> Udemy</p>
+                <p><strong>Description :</strong>Formation complète sur les technologies de développement web,y compris :</p>
+                <ul>
+                    <li>HTML/css/java scipt</li>
+                    <li>jQuery</li>
+                    <li>Bootstrap</li>
+                    <li>Hébergement</li>
+                    <li>PHP</li>
+                    <li>WordPress</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="divider"></div>
+        <div class="heading text-center">
+            <h2>Contact</h2>
+        </div>
+        <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="progress mb-3" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 90%;">C 90%</div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <span class="bi-linkedin"></span>
+                        </div>
+                        <h4>LinkedIn</h4>
+                        <p><a href="https://www.linkedin.com/in/bouatia-iliasse-2b96472a3" target="_blank">View Profile</a></p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="progress mb-3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 60%;">Python 60%</div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <span class="bi-envelope"></span>
+                        </div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:iliassebouatia506@gmail.com">iliassebouatia506@gmail.com</a></p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="progress mb-3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 80%;">HTML/CSS 80%</div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <span class="bi-telephone"></span>
+                        </div>
+                        <h4>Phone</h4>
+                        <p><a href="tel:+212766420519">+212 766420519</a></p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="progress mb-3" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 55%;">JavaScript 55%</div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="progress mb-3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 60%;">Database 60%</div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="progress mb-3" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 75%;">Algorithme 75%</div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <span class="bi-geo-alt"></span>
+                        </div>
+                        <h4>Location</h4>
+                        <p>Temara</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="projects" class="py-5">
-        <div class="divider"></div>
-        <div class="container">
-            <div class="heading text-center mb-5">
-                <h2>Projects</h2>
-            </div>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-badge"><span class="bi-briefcase-fill"></span></div>
-                    <div class="timeline-panel-container">
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>Bluetooth Robots</h4>
-                                <p class="text-muted"><span class="bi-clock-fill"></span> 2024</p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>The robot is controlled via Bluetooth using a mobile app, with commands sent to the Arduino Uno.</p>
-                                <p>The Arduino adjusts the motors based on these signals, enabling movement.</p>
-                                <p>The robot can navigate obstacles, follow paths, and perform other tasks.</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-badge"><span class="bi-briefcase-fill"></span></div>
-                    <div class="timeline-panel-container">
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>Front-end of Travel Agency</h4>
-                                <p class="text-muted"><span class="bi-clock-fill"></span> 2024</p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>Website of a travel agency using HTML and CSS.</p>
-                                <p>The page contains About Us, Destinations, Itineraries, and Contact Us.</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-badge"><span class="bi-briefcase-fill"></span></div>
-                    <div class="timeline-panel-container">
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>Snake Game</h4>
-                                <p class="text-muted"><span class="bi-clock-fill"></span> 2024</p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>The game is created using JavaScript.</p>
-                                <p>When the snake eats the apple, it grows.</p>
-                                <p>When the snake eats itself or hits the wall, it's game over.</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="education" class="py-5">
-        <div class="divider"></div>
-        <div class="container">
-            <div class="heading text-center mb-5">
-                <h2>Education</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="education-block">
-                        <h5>2021-2022</h5>
-                        <span class="bi-award-fill"></span>
-                        <h3>Groupe Scolaire Albayan</h3>
-                        <h4>Bac Français</h4>
-                        <div class="divider"></div>
-                        <p>Science Physique</p>
-                        <p>Mention Très Bien</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="education-block">
-                        <h5>2022-2025</h5>
-                        <span class="bi-award-fill"></span>
-                        <h3>EMSI</h3>
-                        <h4>Ingénierie Informatique et Réseaux</h4>
-                        <div class="divider"></div>
-                        <p>Actuellement en première année cycle ingénieur</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="certificates" class="py-5">
-        <div class="divider"></div>
-        <div class="container">
-            <div class="heading text-center mb-5">
-                <h2>Certificates</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="certificates-block">
-                        <h5>2024</h5>
-                        <span class="bi-certificate-fill"></span>
-                        <h4>Python for Data Science, IA & Development</h4>
-                        <p>IBM/Coursera</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="certificates-block">
-                        <h5>2024</h5>
-                        <span class="bi-certificate-fill"></span>
-                        <h4>Formation Complète Développeur Web</h4>
-                        <p>Udemy</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-5">
-        <div class="divider"></div>
-        <div class="container">
-            <div class="heading text-center mb-5">
-                <h2>Contact</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-                <div class="col-md-6">
-                    <h4>Email: <a href="mailto:iliasse.bouatia@emsi-edu.ma">iliasse.bouatia@emsi-edu.ma</a></h4>
-                    <h4>Phone: <a href="tel:+212766420519">+212 766420519</a></h4>
-                    <div class="social-icons mt-3">
-                        <a href="#" class="mr-2"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" class="mr-2"><i class="bi bi-github"></i></a>
-                        <a href="#"><i class="bi bi-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="text-center py-4">
-        <div class="container">
-            <p>&copy; 2024 Iliasse Bouatia. All rights reserved.</p>
-        </div>
-    </footer>
-
+    
 </body>
 </html>
