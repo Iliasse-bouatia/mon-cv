@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 export default function YourComponent() {
   useEffect(() => {
@@ -12,7 +12,6 @@ export default function YourComponent() {
 
     menuToggle.addEventListener('click', handleToggle);
 
-    // Cleanup function to remove the event listener when the component unmounts
     return () => {
       menuToggle.removeEventListener('click', handleToggle);
     };
@@ -20,16 +19,10 @@ export default function YourComponent() {
 
   return (
     <div>
+      {/* Your JSX structure here */}
       <button className="menu-toggle">Menu</button>
       <nav className="nav-links">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#certificates">Certificates</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        {/* Nav links here */}
       </nav>
     </div>
   );
