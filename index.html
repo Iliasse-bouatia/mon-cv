@@ -11,123 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <style>
-        /* Custom styles for better mobile responsiveness */
-        .navbar {
-            background-color: #333;
-        }
-        .navbar .logo {
-            color: #fff;
-            font-weight: bold;
-        }
-        .navbar .nav-links {
-            list-style: none;
-            padding: 0;
-        }
-        .navbar .nav-links li {
-            display: inline;
-            margin-right: 15px;
-        }
-        .navbar .nav-links a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .menu-toggle {
-            display: none;
-        }
-        @media (max-width: 767px) {
-            .navbar .nav-links {
-                display: none;
-                text-align: center;
-            }
-            .navbar .nav-links li {
-                display: block;
-                margin: 10px 0;
-            }
-            .menu-toggle {
-                display: block;
-                cursor: pointer;
-            }
-            .menu-toggle .bar {
-                display: block;
-                background-color: #fff;
-                height: 3px;
-                width: 25px;
-                margin: 5px 0;
-            }
-            .navbar .nav-links.show {
-                display: block;
-            }
-            .profile-picture img {
-                width: 100%;
-                height: auto;
-            }
-        }
-        .button1 {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .button1:hover {
-            background-color: #0056b3;
-        }
-        .timeline {
-            list-style: none;
-            padding: 0;
-        }
-        .timeline li {
-            margin-bottom: 20px;
-        }
-        .timeline-badge {
-            background-color: #007bff;
-            color: #fff;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-        }
-        .timeline-panel-container {
-            display: flex;
-            flex-direction: column;
-        }
-        .timeline-panel-container-inverted {
-            flex-direction: column-reverse;
-        }
-        .timeline-panel {
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .education-block {
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        .contact-card {
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .contact-card .contact-icon {
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
-        .contact-card p a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .contact-card p a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <script src="jscript.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -151,7 +35,7 @@
 
     <section id="about" class="container-fluid">
         <div class="row">
-            <div class="col-12 col-lg-4 profile-picture">
+            <div class="col-8 col-lg-4 profile-picture">
                 <img src="me.jpg" class="rounded-circle" alt="Iliasse Bouatia">
             </div>
             <div class="col-12 text-center heading">
@@ -164,13 +48,13 @@
 
     <section id="skills">
         <div class="divider"></div>
-        <div class="heading text-center">
+        <div class="heading">
             <h2>Skills</h2>
         </div>
         <div class="container">
             <div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-bar" style="width: 90%;">
-                    <span>C 90 %</span>
+                    <span>C 90%</span>
                 </div>
             </div>
             <div class="progress" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
@@ -203,20 +87,20 @@
 
     <section id="projects">
         <div class="divider"></div>
-        <div class="heading text-center">
+        <div class="heading">
             <h2>Projects</h2>
         </div>
         <ul class="timeline">
             <li>
                 <div class="timeline-badge"><span class="bi-briefcase-fill"></span></div>
-                <div class="timeline-panel-container">
+                <div class="timeline-panel-container"> 
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <h4>Bluetooth Robots</h4>
                             <p class="text-muted"><span class="bi-clock-fill"></span> 2024</p>
                         </div>
                         <div class="timeline-body">
-                            <p>The robot is controlled via Bluetooth using a mobile app, with commands sent to the Arduino Uno.</p>
+                            <p>The robot is controlled via Bluetooth using a mobile app, with commands sent to the Arduino Uno.</p> 
                             <p>The Arduino adjusts the motors based on these signals, enabling movement.</p>
                             <p>The robot can navigate obstacles, follow paths, and perform other tasks.</p>
                         </div>
@@ -225,14 +109,14 @@
             </li>
             <li>
                 <div class="timeline-badge"><span class="bi-briefcase-fill"></span></div>
-                <div class="timeline-panel-container timeline-panel-container-inverted">
+                <div class="timeline-panel-container timeline-panel-container-inverted"> 
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <h4>Front-end of Travel Agency</h4>
                             <p class="text-muted"><span class="bi-clock-fill"></span> 2024</p>
                         </div>
                         <div class="timeline-body">
-                            <p>Website of a travel agency using HTML and CSS.</p>
+                            <p>Website of a travel agency using HTML and CSS.</p> 
                             <p>The page contains About Us, Destinations, Itineraries, and Contact Us.</p>
                         </div>
                     </div>
@@ -240,14 +124,14 @@
             </li>
             <li>
                 <div class="timeline-badge"><span class="bi-briefcase-fill"></span></div>
-                <div class="timeline-panel-container">
+                <div class="timeline-panel-container"> 
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <h4>Snake Game</h4>
                             <p class="text-muted"><span class="bi-clock-fill"></span> 2024</p>
                         </div>
                         <div class="timeline-body">
-                            <p>The game is created using JavaScript.</p>
+                            <p>The game is created using JavaScript.</p> 
                             <p>When the snake eats the apple, it grows.</p>
                             <p>When the snake eats itself or hits the wall, it's game over.</p>
                         </div>
@@ -259,7 +143,7 @@
 
     <section id="education">
         <div class="divider"></div>
-        <div class="heading text-center">
+        <div class="heading">
             <h2>Education</h2>
         </div>
         <div class="row">
@@ -276,21 +160,21 @@
             </div>
             <div class="col-md-6">
                 <div class="education-block">
-                    <h5>2022-présent</h5>
+                    <h5>2022-Présent</h5>
                     <span class="bi-award-fill"></span>
                     <h3>Ecole Marocaine des Sciences de l'Ingénieur</h3>
                     <h4>1ère Année Cycle d'Ingénieur</h4>
                     <div class="divider"></div>
                     <p>Ingénierie Informatique et Réseaux</p>
                     <p>Auto-Formation</p>
-                </div>
+                </div> 
             </div>
         </div>
     </section>
 
     <section id="certificates">
         <div class="divider"></div>
-        <div class="heading text-center">
+        <div class="heading">
             <h2>Certificats</h2>
         </div>
         <div class="container">
@@ -344,7 +228,7 @@
                             <span class="bi-envelope"></span>
                         </div>
                         <h4>Email</h4>
-                        <p><a href="mailto:iliassebouatia506@gmail.com">iliassebouatia506@gmail.com</a></p>
+                        <p><a href="mailto:iliasse.bouatia@emsi-edu.ma">iliasse.bouatia@emsi-edu.ma</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
