@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="CV Iliasse Bouatia, étudiant en ingénierie.">
-    <title>CV Iliasse </title>
+    <title>CV Iliasse Bouatia</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -12,6 +12,122 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <style>
+        /* Custom styles for better mobile responsiveness */
+        .navbar {
+            background-color: #333;
+        }
+        .navbar .logo {
+            color: #fff;
+            font-weight: bold;
+        }
+        .navbar .nav-links {
+            list-style: none;
+            padding: 0;
+        }
+        .navbar .nav-links li {
+            display: inline;
+            margin-right: 15px;
+        }
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .menu-toggle {
+            display: none;
+        }
+        @media (max-width: 767px) {
+            .navbar .nav-links {
+                display: none;
+                text-align: center;
+            }
+            .navbar .nav-links li {
+                display: block;
+                margin: 10px 0;
+            }
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+            }
+            .menu-toggle .bar {
+                display: block;
+                background-color: #fff;
+                height: 3px;
+                width: 25px;
+                margin: 5px 0;
+            }
+            .navbar .nav-links.show {
+                display: block;
+            }
+            .profile-picture img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .button1 {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button1:hover {
+            background-color: #0056b3;
+        }
+        .timeline {
+            list-style: none;
+            padding: 0;
+        }
+        .timeline li {
+            margin-bottom: 20px;
+        }
+        .timeline-badge {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        .timeline-panel-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .timeline-panel-container-inverted {
+            flex-direction: column-reverse;
+        }
+        .timeline-panel {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .education-block {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .contact-card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .contact-card .contact-icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .contact-card p a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-card p a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -33,22 +149,22 @@
         </div>
     </nav>
 
-   
     <section id="about" class="container-fluid">
         <div class="row">
-            <div class="col-8 col-lg-4 profile-picture">
+            <div class="col-12 col-lg-4 profile-picture">
                 <img src="me.jpg" class="rounded-circle" alt="Iliasse Bouatia">
             </div>
             <div class="col-12 text-center heading">
                 <h1>Hello, I'm Iliasse</h1>
                 <h3>Engineering Student</h3>
-                <a href="cv.pdf" download  class="button1">Download CV</a>
+                <a href="cv.pdf" download class="button1">Download CV</a>
             </div>
         </div>
     </section>
+
     <section id="skills">
         <div class="divider"></div>
-        <div class="heading">
+        <div class="heading text-center">
             <h2>Skills</h2>
         </div>
         <div class="container">
@@ -74,32 +190,33 @@
             </div>
             <div class="progress" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-bar" style="width: 60%;">
-                    <span>data base 60%</span>
+                    <span>Database 60%</span>
                 </div>
             </div>
             <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-bar" style="width: 75%;">
-                    <span>Algorithme 75%</span>
+                    <span>Algorithms 75%</span>
                 </div>
             </div>
         </div>
     </section>
+
     <section id="projects">
         <div class="divider"></div>
-        <div class="heading">
+        <div class="heading text-center">
             <h2>Projects</h2>
         </div>
         <ul class="timeline">
             <li>
-                <div class="timeline-badge"> <span class="bi-briefcase-fill"></span></div>
-                <div class="timeline-panel-container"> 
+                <div class="timeline-badge"><span class="bi-briefcase-fill"></span></div>
+                <div class="timeline-panel-container">
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <h4>Bluetooth Robots</h4>
                             <p class="text-muted"><span class="bi-clock-fill"></span> 2024</p>
                         </div>
                         <div class="timeline-body">
-                            <p>The robot is controlled via Bluetooth using a mobile app, with commands sent to the Arduino Uno.</p> 
+                            <p>The robot is controlled via Bluetooth using a mobile app, with commands sent to the Arduino Uno.</p>
                             <p>The Arduino adjusts the motors based on these signals, enabling movement.</p>
                             <p>The robot can navigate obstacles, follow paths, and perform other tasks.</p>
                         </div>
@@ -107,30 +224,30 @@
                 </div>
             </li>
             <li>
-                <div class="timeline-badge"> <span class="bi-briefcase-fill"></span></div>
-                <div class="timeline-panel-container timeline-panel-container-inverted"> 
+                <div class="timeline-badge"><span class="bi-briefcase-fill"></span></div>
+                <div class="timeline-panel-container timeline-panel-container-inverted">
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <h4>Front-end of Travel Agency</h4>
                             <p class="text-muted"><span class="bi-clock-fill"></span> 2024</p>
                         </div>
                         <div class="timeline-body">
-                            <p>Website of a travel agency using HTML and CSS.</p> 
+                            <p>Website of a travel agency using HTML and CSS.</p>
                             <p>The page contains About Us, Destinations, Itineraries, and Contact Us.</p>
                         </div>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="timeline-badge"> <span class="bi-briefcase-fill"></span></div>
-                <div class="timeline-panel-container"> 
+                <div class="timeline-badge"><span class="bi-briefcase-fill"></span></div>
+                <div class="timeline-panel-container">
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <h4>Snake Game</h4>
                             <p class="text-muted"><span class="bi-clock-fill"></span> 2024</p>
                         </div>
                         <div class="timeline-body">
-                            <p>The game is created using JavaScript.</p> 
+                            <p>The game is created using JavaScript.</p>
                             <p>When the snake eats the apple, it grows.</p>
                             <p>When the snake eats itself or hits the wall, it's game over.</p>
                         </div>
@@ -139,9 +256,10 @@
             </li>
         </ul>
     </section>
+
     <section id="education">
         <div class="divider"></div>
-        <div class="heading">
+        <div class="heading text-center">
             <h2>Education</h2>
         </div>
         <div class="row">
@@ -149,51 +267,51 @@
                 <div class="education-block">
                     <h5>2021-2022</h5>
                     <span class="bi-award-fill"></span>
-                    <h3> groupe scolaire albayan </h3>
-                    <h4>  bac français </h4>
+                    <h3>Groupe Scolaire Albayan</h3>
+                    <h4>Bac Français</h4>
                     <div class="divider"></div>
-                    <p>  science phisyque </p>
-                    <p> mention trés bien</p>
+                    <p>Sciences Physiques</p>
+                    <p>Mention Très Bien</p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="education-block">
                     <h5>2022-présent</h5>
                     <span class="bi-award-fill"></span>
-                    <h3> Ecole Marocaine des Sciences de L'ingénieur </h3>
-                    <h4> 1ére annes cycle d'ingénieur   </h4>
+                    <h3>Ecole Marocaine des Sciences de l'Ingénieur</h3>
+                    <h4>1ère Année Cycle d'Ingénieur</h4>
                     <div class="divider"></div>
-                    <p> ingénieurie d'informatique et réseaux</p>
-                    <p> auto Formation </p>
-                </div> 
-        </div>
+                    <p>Ingénierie Informatique et Réseaux</p>
+                    <p>Auto-Formation</p>
+                </div>
+            </div>
         </div>
     </section>
+
     <section id="certificates">
         <div class="divider"></div>
-        <div class="heading">
+        <div class="heading text-center">
             <h2>Certificats</h2>
         </div>
         <div class="container">
             <div class="certificate">
                 <h3>Python for Data Science, IA & Développement</h3>
                 <p><strong>Institution :</strong> IBM / Coursera</p>
-                <p><strong>Description :</strong> Certificat couvrant les fondamentaux de Python, l'analyse de données, l'intelligence artificielle et le développement, ycompris:</p>
+                <p><strong>Description :</strong> Certificat couvrant les fondamentaux de Python, l'analyse de données, l'intelligence artificielle et le développement, y compris :</p>
                 <ul>
-                    <li>python basics</li>
-                    <li>python data structures</li>
-                    <li>python programming fondamentaux</li>
-                    <li>working with data in python</li>
-                    <li>Api's and data collection</li>
-            
+                    <li>Python Basics</li>
+                    <li>Python Data Structures</li>
+                    <li>Python Programming Fundamentals</li>
+                    <li>Working with Data in Python</li>
+                    <li>APIs and Data Collection</li>
                 </ul>
             </div>
             <div class="certificate">
                 <h3>Formation Complète Développeur Web</h3>
                 <p><strong>Institution :</strong> Udemy</p>
-                <p><strong>Description :</strong>Formation complète sur les technologies de développement web,y compris :</p>
+                <p><strong>Description :</strong> Formation complète sur les technologies de développement web, y compris :</p>
                 <ul>
-                    <li>HTML/css/java scipt</li>
+                    <li>HTML/CSS/JavaScript</li>
                     <li>jQuery</li>
                     <li>Bootstrap</li>
                     <li>Hébergement</li>
@@ -203,6 +321,7 @@
             </div>
         </div>
     </section>
+
     <section id="contact">
         <div class="divider"></div>
         <div class="heading text-center">
@@ -249,6 +368,5 @@
             </div>
         </div>
     </section>
-    
 </body>
 </html>
