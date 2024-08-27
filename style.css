@@ -119,79 +119,86 @@ ul {
     padding: 0;
 }
 
+/* Container for the timeline */
 .timeline {
-    padding: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.timeline-item {
     position: relative;
-}
-
-.timeline:before {
-    content: " ";
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    width: 5px;
-    background-color: black;
-    left: 50%;
-    margin-left: -2.5px;
-}
-
-.timeline > li {
+    padding: 20px 0;
+    border-left: 2px solid #ccc;
     margin-bottom: 20px;
-    position: relative;
 }
 
-.timeline > li:after {
-    clear: both;
+.timeline-item-inverted {
+    border-left: none;
+    border-right: 2px solid #ccc;
+    padding-left: 40px;
 }
 
-.timeline > li:before, .timeline > li:after {
-    content: " ";
-    display: table;
-}
-
-.timeline li .timeline-badge {
-    color: black;
-    width: 50px;
-    line-height: 50px;
-    font-size: 20px;
-    text-align: center;
+.timeline-badge {
     position: absolute;
-    top: 16px;
-    left: 50%;
-    margin-left: -25px;
-    background-color: #ddd;
-    border-radius: 50px;
-}
-
-.timeline-panel-container {
-    width: 50%;
-    float: left;
-    padding: 0 20px;
-    position: relative;
-    padding-left: 60px; /* Éloigne du trait noir central */
-}
-
-.timeline-panel-container-inverted {
-    width: 50%;
-    float: right;
-    padding: 0 20px;
-    position: relative;
-    padding-right: 60px; /* Éloigne du trait noir central */
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #333;
 }
 
 .timeline-panel {
-    border: 1px solid #d4d4d4;
-    border-radius: 7px;
-    padding: 20px 25px;
-    position: relative;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-    background: #fff;
-    margin-bottom: 20px; /* Espacement entre les éléments de la timeline */
-    margin-left: 0; /* Enlève les marges à gauche */
-    margin-right: 0; /* Enlève les marges à droite */
-    margin-left: 60px; /* Éloigne du trait noir central */
-    margin-right: 60px; /* Éloigne du trait noir central */
+    margin-left: 45px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
 }
+
+.timeline-heading h4 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.timeline-body p {
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+@media (max-width: 576px) {
+    .timeline-item {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .timeline-item-inverted {
+        border-right: none;
+        padding-left: 0;
+    }
+
+    .timeline-badge {
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .timeline-panel {
+        margin-left: 0;
+    }
+
+    .timeline-heading h4 {
+        font-size: 1em;
+    }
+
+    .timeline-body p {
+        font-size: 0.8em;
+    }
+}
+
 #education .heading h2 {
     margin: 15px 0px;
     margin-bottom: 40px; /* Ajouter de l'espace sous le titre */
