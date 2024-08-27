@@ -139,24 +139,15 @@ ul {
 }
 
 .timeline-badge {
-    position: absolute;
-    left: -15px;
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 30px;
-    font-size: 16px;
-    color: #333;
+    display: none; /* Hide badges for this layout */
 }
 
 .timeline-panel {
-    margin-left: 45px;
+    margin-left: 0;
     padding: 10px;
     background: #f9f9f9;
     border-radius: 5px;
+    border: 1px solid #ddd; /* Optional border for better distinction */
 }
 
 .timeline-heading h4 {
@@ -182,8 +173,7 @@ ul {
     }
 
     .timeline-badge {
-        left: 0;
-        margin: 0 auto;
+        display: none; /* Hide badges on small screens */
     }
 
     .timeline-panel {
@@ -198,6 +188,7 @@ ul {
         font-size: 0.8em;
     }
 }
+
 
 #education .heading h2 {
     margin: 15px 0px;
