@@ -370,6 +370,10 @@ body {
         display: flex;
     }
 }
+/* Ajoutez ceci dans votre fichier style.css */
+.navbar-custom {
+    background-color: #007bff; /* Bleu bootstrap */
+}
 
 .menu-toggle.active .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
