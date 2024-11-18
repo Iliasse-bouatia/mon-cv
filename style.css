@@ -69,50 +69,6 @@ section.heading h2 {
     color: #ffffff;
 }
 
-#skills .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#skills .progress {
-    width: 45%; /* Largeur de chaque barre de progression */
-    margin: 10px 15px; /* Espacement entre les barres */
-    height: 40px; /* Hauteur de la barre pour mieux contenir le texte */
-    position: relative; /* Nécessaire pour positionner le texte centré */
-}
-
-#skills .progress-bar {
-    background-color: #2C3E50; /* Couleur de fond des barres */
-    color: #FFFFFF; /* Couleur du texte à l'intérieur des barres */
-    font-weight: bold; /* Texte en gras */
-    text-align: center; /* Centrage horizontal du texte */
-    line-height: 40px; /* Hauteur de ligne pour centrer verticalement le texte */
-    font-size: 1.25rem; /* Taille du texte (augmentée) */
-    border-radius: 3px; /* Ajout de bordures arrondies */
-    width: 100%; /* Prendre toute la largeur du conteneur */
-    display: flex; /* Flexbox pour centrer le contenu */
-    align-items: center; /* Centrage vertical */
-    justify-content: center; /* Centrage horizontal */
-    position: absolute; /* Permet de superposer le texte au-dessus de la barre de progression */
-    top: 0; /* Alignement du texte en haut de la barre */
-    left: 0; /* Alignement du texte à gauche de la barre */
-    z-index: 1; /* S'assurer que le texte soit au-dessus de la barre */
-}
-
-#skills .progress-bar-fill {
-    width: var(--progress); /* Largeur de la barre remplie en fonction du pourcentage */
-    background-color: rgba(255, 255, 255, 0.3); /* Couleur de la barre remplie */
-    height: 100%;
-    z-index: 0; /* S'assurer que la barre soit en-dessous du texte */
-}
-
-#skills, h2 {
-    text-align: center;
-}
-#projects {
-    background-color: #ECF0F1; /* Blanc cassé */
-}
 
 ul {
     list-style: none;
@@ -139,15 +95,24 @@ ul {
 }
 
 .timeline-badge {
-    display: none; /* Hide badges for this layout */
+    position: absolute;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #333;
 }
 
 .timeline-panel {
-    margin-left: 0;
+    margin-left: 45px;
     padding: 10px;
     background: #f9f9f9;
     border-radius: 5px;
-    border: 1px solid #ddd; /* Optional border for better distinction */
 }
 
 .timeline-heading h4 {
@@ -173,7 +138,8 @@ ul {
     }
 
     .timeline-badge {
-        display: none; /* Hide badges on small screens */
+        left: 0;
+        margin: 0 auto;
     }
 
     .timeline-panel {
@@ -189,13 +155,15 @@ ul {
     }
 }
 
-
 #education .heading h2 {
     margin: 15px 0px;
     margin-bottom: 40px; /* Ajouter de l'espace sous le titre */
+    text-align: center;
 }
-.education-block{
-    width: 90%;
+
+.education-block {
+    width: 100%; /* Prend toute la largeur de la colonne centrée */
+    max-width: 500px; /* Limite la largeur pour plus de lisibilité */
     margin: 0 auto;
     text-align: center;
     padding: 30px;
@@ -204,76 +172,27 @@ ul {
     border: 1px solid #ccc;
     margin-bottom: 20px;
 }
-.education-block h5{
+
+.education-block h5 {
     color: #888;
     font-size: 15px;
     margin-bottom: 15px;
 }
-.education-block span{
+
+.education-block span {
     font-size: 35px;
 }
-.education-block h3{
+
+.education-block h3 {
     margin: 15px 0px;
 }
-.education-block h4{
-    margin-bottom:20px ;
+
+.education-block h4 {
+    margin-bottom: 20px;
     font-weight: normal;
 }
-/* Style pour la section des informations de contact */
-/* Section Contact */
-/* Section Contact */
-/* Contact Section Styling */
 
 
-#certificates {
-    padding: 60px 0;
-    background-color: #f9f9f9;
-}
-
-#certificates .heading h2 {
-    font-size: 2rem;
-    color: #2C3E50;
-    margin-bottom: 40px;
-}
-
-#certificates .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#certificates .certificate {
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 500px;
-    text-align: center;
-    min-height: 200px;
-}
-
-#certificates .certificate h3 {
-    margin-top: 0;
-    color: #2C3E50;
-}
-
-#certificates .certificate p {
-    margin: 5px 0;
-    color: #333;
-    font-size: 1rem;
-}
-
-#certificates .certificate ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0 0;
-    text-align: left;
-}
-
-#certificates .certificate ul li {
-    margin: 5px 0;
-}
 
 body {
     margin: 0;
